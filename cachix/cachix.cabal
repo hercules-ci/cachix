@@ -118,10 +118,7 @@ library
     , vector
     , versions
 
-  ghc-options:       -optc=-std=c++17
-
-  if os(osx)
-    ghc-options: -pgmc=clang++
+  ghc-options:       -optcxx=-std=c++17
 
 executable cachix
   import:             defaults
